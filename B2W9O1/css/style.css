@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/**font import section**/
+/**font import section end**/
+:root {
+  --text-color-main: #000;
+  --text-color-secondary: lighten(#000, 10%)
+  --background-color-main: #fff;
+  --background-color-secondary: yellow;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-main: #fff;
+    --text-color-secondary: darken(#fff, 10%);
+    --background-color-main: #23272e;
+    --background-color-secondary: rgb(184, 184, 3);
+  }
+}
+
+body {
+  background-color: var(--background-color-main);
+  font-family: "Archivo", sans-serif, monospace;
+  color: var(--text-color-main);
+  overflow-x: hidden;
+}
+
+.mobile-hide {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .mobile-hide {
+    display: block;
+    height: 1.8em;
+    background-color: var(--background-color-secondary);
+  }
+}
+
+.navbar {
+  font-size: 2.5em;
+  padding: 0.2em;
+  width: 100%;
+  background-color: var(--background-color-secondary);
+  height: 100%;
+}
+.navbar #navitems {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .navbar {
+    background-color: var(--background-color-main);
+  }
+  .navbar #navitems {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

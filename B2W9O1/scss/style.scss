@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+/**font import section**/
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/**font import section end**/
+
+$default_font: 'Archivo', sans-serif, monospace;
+$width_desktop: 1025px;
+
+:root{
+    --text-color-main: #000;
+    --text-color-secondary: lighten(#000, 10%)
+
+    --background-color-main: #fff;
+    --background-color-secondary: yellow;
+
+    @media(prefers-color-scheme: dark){
+        --text-color-main: #fff;
+        --text-color-secondary: darken(#fff, 10%);
+
+        --background-color-main: #23272e;
+        --background-color-secondary: rgb(184, 184, 3);
+    }
+}
+
+
+body{
+    background-color: var(--background-color-main);
+    font-family: $default_font;
+    color: var(--text-color-main);
+    overflow-x: hidden;
+}
+
+.mobile-hide{
+    display: none;
+    @media(min-width: $width_desktop){
+        display: block;
+        height: 1.8em;
+        background-color: var(--background-color-secondary);
+    }
+}
+
+.navbar{
+    font-size: 2.5em;
+    padding: 0.2em;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    height: 100%;
+    #navitems{
+        display: none;
+    }
+    @media(min-width: $width_desktop){
+        background-color: var(--background-color-main);
+        #navitems{
+            display: inline-block;
+        }
+    }
+}
