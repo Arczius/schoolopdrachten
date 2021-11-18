@@ -1,0 +1,20 @@
+{
+  "name": "schoolopdrachten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arczius/schoolopdrachten.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arczius/schoolopdrachten/issues"
+  },
+  "homepage": "https://github.com/Arczius/schoolopdrachten#readme"
+}
