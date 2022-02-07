@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #3a3833;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    header{
+        margin-top: 3rem;
+        .top{
+            background: transparent;
+            h1{
+                color: white;
+                font-size: 8rem;
+            }
+        }
+        .bottom{
+            padding: 20px 10px;
+            background-color: red;
+        }
+    }
+
+    main{
+        background-color: #fff;
+        padding: 15px;
+        form.form{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 15px;
+            p, input{
+                padding: 10px;
+            }
+        }
+    }
+
+    footer{
+        background-color: #535245;
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
