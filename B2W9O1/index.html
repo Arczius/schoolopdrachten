@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2W9O1</title>
     <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="">
-        <div class="hidden lg:block bg-yellow-300 w-full h-7">
-            <p>hoi</p>
+<body> 
+    <header class="fixed top-0 left-0 w-screen">
+        <div class="hidden  bg-yellow-300 w-full h-7 lg:flex lg:justify-end lg:pr-8">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span> 
         </div>
 
         <nav class="bg-yellow-300 lg:bg-white w-full h-10">
             <div class="lg:hidden cursor-pointer pl-1">
                 <i class="fas fa-bars text-4xl"  id="burger-menu"></i>
             </div>
-            <ul id="navitems" class="hidden bg-yellow-300 lg:bg-white lg:block">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+            <ul id="navitems" class="hidden bg-yellow-300 lg:bg-white uppercase lg:flex lg:align-middle lg:justify-end lg:gap-12">
+                <li class="imagenav">a<img src="" alt=""></li>
+                <li>autorijbewijs</li>
+                <li>motorrijbewijs</li>
+                <li>theorieles</li>
+                <li>opfriscursus</li>
+                <li class="mr-5">contact</li>
             </ul>
         </nav>
     </header>
-    
+
+    <main class="p-2 pt-12 lg:pt-32">
+
+        <section class="p4">
+            <img src="" alt="">
+        </section>
+        <section class="grid content gap-7 lg:grid-cols-3">
+            <div class="p-1">
+                <h1 class="text-2xl border-b-2 border-gray-300"><i class="fas fa-car"></i> PROEFLES</h1>
+                <p>Weet u het nog niet zeker maar wilt u het toch even proberen bij flexi. Dat kan, want met een vrijblijvende intakeles zit jij nergens aan vast. Jij voelt meteen of er een klik is tussen jou en de rijinstructeur. Is er geen klik, dan zijn er nog andere FLEXi rijinstructeur. Ook bij andere rijinstructeur geldt de vrijblijvende intakeles! Wel zo mooi.</p>
+                <span class="w-full bg-yellow-300 text-2xl block text-center">GRATIS proefles</span>
+            </div>
+            <div class="p-1">
+                <h1 class="text-2xl border-b-2 border-gray-300"><i class="fas fa-map"></i>LOCATIES</h1>
+                <p>Onze rijinstructeurs zijn verspreid over wel bijna heel Nederland. Er is dus bijna altijd wel een rijinstructeur bij jou in de beurt. Is er bij jou in de beurt nog geen FLEXi rijschool. Bel dan even met ons. Wij kijken dan samen of we toch een FLEXi rijinstructeur voor jou kunnen regelen. Klik <a href="#" class="text-blue-500 font-bold">hier</a> voor de locaties.</p>
+            </div>
+            <div class="p-1">
+                <h1 class="text-2xl border-b-2 border-gray-300"><i class="fab fa-redhat mr-2"></i>RIJLESSEN</h1>
+                <p>De rijlessen van FLEXi worden op basis van een instructiekaard voorbereid en uitgevoerd. Op de instructiekaart houdt de FLEXi rijinstructeur jouw vorderingen in de gaten. Ook gebruiken de meeste FLEXi rijinstructeurs een dashcame, zodat de les of een deel van de les teruggekeken wordt. Hier halen jij en jouw FLEXi rijinstructeur jouw de pas en nav en bespreekt dit met jou.</p>
+            </div>
+        </section>
+        <section>
+
+            <iframe class="w-full" width="560" height="" src="https://www.youtube.com/embed/AuwVmShBw-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+
 
     <script src="./js/script.js"></script>
 </body>
