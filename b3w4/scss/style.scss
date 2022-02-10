@@ -1,0 +1,103 @@
+$background-color: #808080;
+$container-inner-bg: #fff;
+$basic_space: 15px;
+$black: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: $background-color;
+    font-size: 1.1rem;
+}
+a{
+    color: $black;
+    text-decoration: none;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    header, .main, .detail, footer{
+        background-color: $container-inner-bg;
+        width: 100%;
+        max-width: 1280px;
+        margin: $basic_space 0;
+    }
+    
+    header{
+        text-align: center;
+        position: relative;
+        .button__back{
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+     
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: $basic_space;
+        padding: $basic_space;
+        
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: inherit;
+            padding: $basic_space;
+            border-bottom: solid 1px $background-color;
+
+            transition-duration: 0.3s;
+            &:hover{
+                background-color: darken($container-inner-bg, 15%);
+            }
+
+            img{
+                width: calc(100% / 3);
+                border-radius: 50%;
+            }
+
+            .content{
+                flex-grow: 1;
+            }
+        }
+    }
+    
+    .detail{
+        padding: $basic_space;
+        display: flex;
+        .left{
+            padding: 10px;
+            .top{
+
+            }
+            .bottom{
+                background-color: yellowgreen;
+                border: solid 2px $black;
+                padding: $basic_space;
+                ul{
+                    padding: 10px 0;
+                }
+            }
+        }
+        .right{
+
+        }
+    }
+
+    footer{
+        text-align: center;
+        padding: $basic_space 0;
+    }    
+}
